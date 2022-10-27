@@ -1,0 +1,1 @@
+Get-ADUser -Filter "Enabled -eq 'true'" -SearchBase "OU=,DC=,DC=,DC=" -Properties Name, SamAccountName, title, description | FT Name, SamAccountName, title, description >> 'c:\result.txt'
